@@ -9,6 +9,7 @@ QtWebTest::QtWebTest(QWidget *parent)
 
     webView = new MyWebEngineView(this);
     ui.verticalLayout->addWidget(webView, 1);
+    webView->load(QUrl("https://www.baidu.com"));
 
     connect(ui.pushButton_back, SIGNAL(clicked()), webView, SLOT(back()));
     connect(ui.pushButton_front, SIGNAL(clicked()), webView, SLOT(forward()));

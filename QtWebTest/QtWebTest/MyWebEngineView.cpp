@@ -1,6 +1,6 @@
 #include "MyWebEngineView.h"
 
-MyWebEngineView::MyWebEngineView(QWidget* parent /*= Q_NULLPTR*/) {
+MyWebEngineView::MyWebEngineView(QWidget* parent /*= Q_NULLPTR*/):QWebEngineView(parent) {
 
 }
 
